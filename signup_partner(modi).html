@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Sign Up </title>
+    <link rel="stylesheet" href="stylepartner.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" href="Logo.png" type="image/x.icon">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Sign Up</div>
+    <div class="content">
+      <form action="homePagePartner.html" method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <!--add name attr for each box-->
+            <span class="details">First Name <span style="color: red;">*</span></span>
+            <span class="details"><span style="color: red">*</span> First Name</span>
+            <input type="text" placeholder="Enter your First name" minlength="2" maxlength="10" name="firstname" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Last Name<span style="color: red;">*</span></span>
+            <input type="text" placeholder="Enter your Last name" minlength="3" maxlength="20" name="lastname" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email<span style="color: red;">*</span></span>
+            <input type="text" placeholder="Enter your email" name="email"  minlength="11" maxlength="30" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number<span style="color: red;">*</span></span>
+            <input type="text" placeholder="Enter your number" name="phonenum" minlength="10" maxlength="12" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Password<span style="color: red;">*</span></span>
+            <input type="password" placeholder="Enter your password" name="pass"  minlength="10" maxlength="30" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password<span style="color: red;">*</span></span>
+            <input type="password" placeholder="Confirm your password" name="passcon" minlength="10" maxlength="30" required>
+          </div>
+          <div class="input-box">
+            <span class="details">City<span style="color: red;">*</span></span>
+            <input type="text" placeholder="Enter your City" name="city" minlength="2" maxlength="30" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Age<span style="color: red;">*</span></span>
+            <input type="text" placeholder="Enter your age" name="age" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Language<span style="color: red;">*</span></span>
+            <input type="text" placeholder="Language you spoken" name="language" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Bio<span style="color: red;">*</span></span>
+            <textarea rows="5" cols="40" name="bio" style="   background-color: #222;"></textarea>
+           
+          </div>
+          <div>
+            <label for="file-input" class="input-file-label">Upload Photo   </label><br>
+            <input type="file" class="input-file" accept="image/*" id="file-input">
+
+        </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1" checked required>
+          <input type="radio" name="gender" id="dot-2" required>
+          <span class="gender-title">Gender<span style="color: red;">*</span></span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Sign Up"> <!-- must add a login link-->
+        </div>
+        <div class="form-link">
+          <span>Already have an account? <a href="signinPartner.html" class="link login-link">Login</a></span>
+      </div>
+      </form>
+    </div>
+  </div>
+            </div>
+            <div class="input-box">
+              <span class="details"><span style="color: red">*</span> Last Name</span>
+              <input type="text" placeholder="Enter your Last name" minlength="3" maxlength="20" name="lastname" required>
+            </div>
+            <div class="input-box">
+              <span class="details"><span style="color: red">*</span> Email</span>
+              <input type="text" placeholder="Enter your email" name="email" minlength="11" maxlength="30" required>
+            </div>
+            <div class="input-box">
+              <span class="details"><span style="color: red">*</span> Phone Number</span>
+              <input type="text" placeholder="Enter your number" name="phonenum" minlength="10" maxlength="12" required>
+            </div>
+            <div class="input-box">
+              <span class="details"><span style="color: red">*</span> Password</span>
+              <input type="password" placeholder="Enter your password" name="pass" minlength="10" maxlength="30" required>
+            </div>
+            <div class="input-box">
+              <span class="details"><span style="color: red">*</span> Confirm Password</span>
+              <input type="password" placeholder="Confirm your password" name="passcon" minlength="10" maxlength="30" required>
+            </div>
+            <div class="input-box">
+              <span class="details"><span style="color: red">*</span> City</span>
+              <input type="text" placeholder="Enter your City" name="city" minlength="2" maxlength="30" required>
+            </div>
+            <div class="input-box">
+              <span class="details"><span style="color: red">*</span> Age</span>
+              <input type="text" placeholder="Enter your age" name="age" required>
+            </div>
+            <div class="input-box">
+              <span class="details"><span style="color: red">*</span> Language</span>
+              <input type="text" placeholder="Language you spoken" name="language" required>
+            </div>
+            <div class="input-box">
+              <span class="details"><span style="color: red">*</span> Culture</span>
+              <input type="text" placeholder="Knowledge culture" name="cul" minlength="3" maxlength="20" required>
+            </div>
+            <div>
+              <input type="file" class="input-file" accept="image/*" id="file-input">
+              <label for="file-input" class="input-file-label">Upload Photo</label>
+            </div>
+            </div>
+            <div class="gender-details">
+            <input type="radio" name="gender" id="dot-1" required>
+            <input type="radio" name="gender" id="dot-2" required>
+            <span class="gender-title">Gender</span>
+            <div class="category">
+              <label for="dot-1">
+              <span class="dot one"></span>
+              <span class="gender">Male</span>
+            </label>
+            <label for="dot-2">
+              <span class="dot two"></span>
+              <span class="gender">Female</span>
+            </label>
+            </div>
+            </div>
+            <div class="button">
+            <input type="submit" value="Sign Up"> <!-- must add a login link-->
+            </div>
+            <div class="form-link">
+            <span>Already have an account? <a href="signinPartner.html" class="link login-link">Login</a></span>
+            </div>
+            </form>
+            </div>
+            </div>
+
+</body>
+</html>

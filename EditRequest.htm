@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    
+    <title> Edit Request </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="EditRequest.css" />
+    
+    <link rel="icon" href="Logo.png" type="image/x.icon">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"/> 
+   </head>
+<body>
+   <!--Back button--> 
+   <div class="backBtn">
+    <a href="RequestLearner.html">
+      <span class="line tLine"></span>
+      <span class="line mLine"></span>
+      <span class="label">Back </span>
+      <span class="line bLine"></span>
+  </a>
+</div>
+<!--End Back button-->
+  
+         <!-- Navbar Section -->
+     <nav class="navbar">
+      <div class="navbar__container">
+        <img src="LogoBlackBackground.PNG" alt="Flunecy">
+         
+        </div>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="homePageLearner.html" class="navbar__links" id="home-page">Home</a>
+          </li>
+
+          
+      <li class="navbar__item">
+        <a href="homePageLearner.html" class="navbar__links" id="services-page">Services</a>
+      </li>
+
+      <li class="navbar__item navbar__dropdown">
+        <a href="#" class="navbar__links">Sessions</a>
+        <div class="navbar__dropdown-content">
+          <ul>
+            <li><a href="currentSessionLearner.html">Current Sessions</a></li>
+            <li><a href="preSessionLearner.html">Previous Sessions</a></li>
+          </ul>
+        </div>
+      </li>
+  
+
+      <li class="navbar__item">
+        <a href="RequestLearner.html" class="navbar__links" id="partner-list-page">My Requests</a>
+      </li>
+      <li class="navbar__item navbar__dropdown">
+        <a href="#" class="navbar__links">Profile</a>
+        <div class="navbar__dropdown-content">
+          <ul>
+            <li><a href="ProfileLearner.html">View profile</a></li>
+            <li><a href="editLearner.html">edit profile</a></li>
+           <li> <a href="#overlay" class="open-button">delete account</a></li>
+      <div class="overlay" id="overlay">
+        <div class="message">
+          <h2>Are you sure?</h2>
+          <p>You want to delete account</p>
+         
+          <div>
+            <form action="fluency.html" style="display: inline;">
+              <button type="submit" style="background-color: red;">Yes</button>
+            </form>
+            <form action="homePagePartner.html" style="display: inline;">
+              <button type="submit" style="background-color: green;">No</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <li><a href="fluency.html">Sign out</a></li>
+          </ul>
+        </div>
+      </li>
+      <img src="ProfileIcon.png" alt="Profile" class="custom-img">
+
+
+    </ul>
+</nav>
+  <div class="container">
+    <div class="title">Edit Request</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Language want to learn:</span>
+            <select name="language" required>
+              <option value="" disabled selected>Language want to learn</option>
+              <option value="en" selected>English</option>
+              <option value="sp">Spanish</option>
+              <option value="ge">German</option>
+              <option value="fr">Frensh</option>
+              <option value="hin">Hindi</option>
+              <option value="ar">Arabic</option>
+              <option value="it">Italy</option>
+              <option value="ch">Chinese</option>
+              <option value="rus">Russian</option>
+              <option value="jap">Japanese</option>
+
+              <!-- Add more options for other languages as needed -->
+            </select>
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Level:</span>
+            <select name="Level" required>
+              <option value="" disabled >your current level</option>
+              <option value="Beginner" selected>Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+              <!-- Add more options for other levels as needed -->
+            </select>
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Schedule a session:</span>
+            <input type="datetime-local" value="2024-03-22T00:00">
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Session duration:</span>
+            <select name="duration" required>
+              <option value="" disabled selected>Select a duration</option>
+              <option value="15">15 minutes</option>
+              <option value="30" selected>30 minutes</option>
+              <option value="60">1 hour</option>
+              <!-- Add more options for other durations as needed -->
+            </select>
+          </div>
+          
+          <div>
+            <form>
+              <a href="RequestLearner.html" class= "green-button">Save</a>
+              <a href="homePageLearner.html"class= "red-button">Cancel</a>
+
+         
+            </form>
+          </div>
+ 
+        </div>     
+</body>
+</html>
